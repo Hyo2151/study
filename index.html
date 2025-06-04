@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>김개발 - 풀스택 개발자 포트폴리오</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <!-- 커서 글로우 효과 -->
+    <div class="cursor-glow"></div>
+    
+    <!-- 동적 배경 그래디언트 -->
+    <div class="bg-gradient"></div>
+    
+    <!-- 플로팅 도형들 -->
+    <div class="floating-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+        <div class="shape shape-5"></div>
+    </div>
+
+    <!-- 네비게이션 -->
+    <nav class="navbar glass">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">
+                    <span class="logo-icon">👨‍💻</span>
+                    <span class="logo-text">김개발</span>
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">
+                        <i class="fas fa-home"></i>
+                        <span>홈</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">
+                        <i class="fas fa-user"></i>
+                        <span>소개</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">
+                        <i class="fas fa-code"></i>
+                        <span>기술스택</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experience" class="nav-link">
+                        <i class="fas fa-briefcase"></i>
+                        <span>경력</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">
+                        <i class="fas fa-folder-open"></i>
+                        <span>프로젝트</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">
+                        <i class="fas fa-envelope"></i>
+                        <span>연락처</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 메인 섹션 -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge glass">
+                    <span class="status-indicator"></span>
+                    구직 중
+                </div>
+                <h1 class="hero-title">
+                    안녕하세요! 저는 
+                    <span class="highlight gradient-text">김개발</span>입니다
+                </h1>
+                <p class="hero-subtitle animated-text">열정적인 풀스택 개발자</p>
+                <p class="hero-description">
+                    창의적이고 효율적인 솔루션을 개발하며, 사용자 경험을 최우선으로 생각하는 개발자입니다.
+                    <br>최신 기술 트렌드를 빠르게 학습하고 적용하여 비즈니스 가치를 창출합니다.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">
+                        <span>연락하기</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#projects" class="btn btn-secondary glass">
+                        <span>프로젝트 보기</span>
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com" target="_blank" class="social-link glass">
+                        <i class="fab fa-github"></i>
+                        <span class="social-tooltip">GitHub</span>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" class="social-link glass">
+                        <i class="fab fa-linkedin"></i>
+                        <span class="social-tooltip">LinkedIn</span>
+                    </a>
+                    <a href="mailto:example@email.com" class="social-link glass">
+                        <i class="fas fa-envelope"></i>
+                        <span class="social-tooltip">Email</span>
+                    </a>
+                    <a href="https://notion.so" target="_blank" class="social-link glass">
+                        <i class="fas fa-file-alt"></i>
+                        <span class="social-tooltip">Resume</span>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-card glass floating">
+                    <div class="profile-background"></div>
+                    <div class="profile-img">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='35' r='20' fill='%2364ffda'/%3E%3Cellipse cx='50' cy='75' rx='30' ry='20' fill='%2364ffda'/%3E%3C/svg%3E" alt="Profile">
+                        <div class="profile-ring"></div>
+                    </div>
+                    <div class="profile-info">
+                        <h3>김개발</h3>
+                        <p>Full Stack Developer</p>
+                        <div class="status glass">
+                            <span class="status-dot"></span>
+                            Available for work
+                        </div>
+                        <div class="profile-stats">
+                            <div class="stat">
+                                <span class="stat-number">3+</span>
+                                <span class="stat-label">Years</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">20+</span>
+                                <span class="stat-label">Projects</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span>Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- 소개 섹션 -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Me</h2>
+                <p>저에 대해 더 자세히 알아보세요</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>안녕하세요! 저는 김개발입니다</h3>
+                    <p>
+                        3년간의 개발 경험을 바탕으로 다양한 프로젝트를 성공적으로 완수해왔습니다. 
+                        프론트엔드부터 백엔드까지 전 영역에 걸쳐 깊이 있는 이해를 바탕으로 
+                        완성도 높은 웹 애플리케이션을 개발합니다.
+                    </p>
+                    <p>
+                        사용자 중심의 UI/UX 설계와 최적화된 성능의 백엔드 시스템 구축에 
+                        특별한 관심을 가지고 있으며, 팀워크를 통한 협업을 중시합니다.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat tilt-card">
+                            <span class="stat-number">20</span>
+                            <span class="stat-label">완료된 프로젝트</span>
+                        </div>
+                        <div class="stat tilt-card">
+                            <span class="stat-number">3</span>
+                            <span class="stat-label">년간 경험</span>
+                        </div>
+                        <div class="stat tilt-card">
+                            <span class="stat-number">15</span>
+                            <span class="stat-label">기술 스택</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="about-card tilt-card">
+                        <i class="fas fa-code"></i>
+                        <h4>Clean Code</h4>
+                        <p>가독성과 유지보수성을 고려한 깔끔한 코드 작성</p>
+                    </div>
+                    <div class="about-card tilt-card">
+                        <i class="fas fa-rocket"></i>
+                        <h4>Performance</h4>
+                        <p>최적화된 성능의 웹 애플리케이션 개발</p>
+                    </div>
+                    <div class="about-card tilt-card">
+                        <i class="fas fa-users"></i>
+                        <h4>Collaboration</h4>
+                        <p>효과적인 커뮤니케이션과 팀워크</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 기술 스택 섹션 -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2>기술 스택</h2>
+                <p>제가 사용할 수 있는 기술들입니다</p>
+            </div>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3><i class="fas fa-laptop-code"></i> Frontend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item tilt-card">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML5</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item tilt-card">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS3</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item tilt-card">
+                            <i class="fab fa-js-square"></i>
+                            <span>JavaScript</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item tilt-card">
+                            <i class="fab fa-react"></i>
+                            <span>React</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item tilt-card">
+                            <i class="fab fa-vuejs"></i>
+                            <span>Vue.js</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="75"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-server"></i> Backend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item tilt-card">
+                            <i class="fab fa-node-js"></i>
+                            <span>Node.js</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item tilt-card">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item tilt-card">
+                            <i class="fas fa-coffee"></i>
+                            <span>Java</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item tilt-card">
+                            <i class="fas fa-database"></i>
+                            <span>MongoDB</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="70"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item tilt-card">
+                            <i class="fas fa-database"></i>
+                            <span>MySQL</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="80"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Tools & Others</h3>
+                    <div class="skill-items">
+                        <div class="skill-item tilt-card">
+                            <i class="fab fa-git-alt"></i>
+                            <span>Git</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item tilt-card">
+                            <i class="fab fa-docker"></i>
+                            <span>Docker</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="70"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item tilt-card">
+                            <i class="fab fa-aws"></i>
+                            <span>AWS</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="65"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item tilt-card">
+                            <i class="fab fa-figma"></i>
+                            <span>Figma</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="75"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 경력 섹션 -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2>경력 사항</h2>
+                <p>저의 전문적인 경험들을 소개합니다</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2022 - 현재</div>
+                    <div class="timeline-content tilt-card">
+                        <h3>시니어 프론트엔드 개발자</h3>
+                        <h4>테크스타트업 ABC</h4>
+                        <p>
+                            React와 TypeScript를 활용하여 대규모 SaaS 플랫폼의 프론트엔드를 개발하고 있습니다. 
+                            팀의 기술 리드로서 코드 리뷰와 멘토링을 담당하며, 성능 최적화를 통해 
+                            페이지 로딩 시간을 40% 단축시켰습니다.
+                        </p>
+                        <div class="timeline-tags">
+                            <span>React</span>
+                            <span>TypeScript</span>
+                            <span>Redux</span>
+                            <span>Next.js</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2021 - 2022</div>
+                    <div class="timeline-content tilt-card">
+                        <h3>풀스택 개발자</h3>
+                        <h4>소프트웨어 회사 XYZ</h4>
+                        <p>
+                            전자상거래 플랫폼의 프론트엔드와 백엔드를 모두 담당했습니다. 
+                            Vue.js와 Node.js를 사용하여 실시간 채팅 시스템과 결제 시스템을 구현했으며, 
+                            AWS를 활용한 클라우드 인프라 구축 경험을 쌓았습니다.
+                        </p>
+                        <div class="timeline-tags">
+                            <span>Vue.js</span>
+                            <span>Node.js</span>
+                            <span>Express</span>
+                            <span>MongoDB</span>
+                            <span>AWS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2020 - 2021</div>
+                    <div class="timeline-content tilt-card">
+                        <h3>주니어 프론트엔드 개발자</h3>
+                        <h4>스타트업 123</h4>
+                        <p>
+                            웹 애플리케이션의 사용자 인터페이스 개발을 담당했습니다. 
+                            모바일 반응형 디자인 구현과 크로스 브라우저 호환성 확보에 집중하여 
+                            사용자 만족도를 크게 향상시켰습니다.
+                        </p>
+                        <div class="timeline-tags">
+                            <span>HTML/CSS</span>
+                            <span>JavaScript</span>
+                            <span>jQuery</span>
+                            <span>Bootstrap</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 프로젝트 섹션 -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2>주요 프로젝트</h2>
+                <p>제가 참여한 대표적인 프로젝트들입니다</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card tilt-card">
+                    <div class="project-image">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>E-commerce Platform</h3>
+                        <p>React와 Node.js를 활용한 종합 전자상거래 플랫폼입니다. 실시간 재고 관리, 결제 시스템, 관리자 대시보드를 포함합니다.</p>
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                            <span>Stripe</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-small">라이브 데모</a>
+                            <a href="#" class="btn btn-small btn-outline">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card tilt-card">
+                    <div class="project-image">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>실시간 채팅 애플리케이션</h3>
+                        <p>Socket.io를 활용한 실시간 채팅 시스템입니다. 개인/그룹 채팅, 파일 공유, 이모티콘 기능을 지원합니다.</p>
+                        <div class="project-tags">
+                            <span>Vue.js</span>
+                            <span>Socket.io</span>
+                            <span>Express</span>
+                            <span>Redis</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-small">라이브 데모</a>
+                            <a href="#" class="btn btn-small btn-outline">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card tilt-card">
+                    <div class="project-image">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>데이터 대시보드</h3>
+                        <p>비즈니스 인텔리전스를 위한 인터랙티브 대시보드입니다. 실시간 데이터 시각화와 커스터마이징 가능한 차트를 제공합니다.</p>
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>D3.js</span>
+                            <span>Python</span>
+                            <span>PostgreSQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-small">라이브 데모</a>
+                            <a href="#" class="btn btn-small btn-outline">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 연락처 섹션 -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>연락처</h2>
+                <p>언제든지 연락 주세요!</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>함께 일해요!</h3>
+                    <p>새로운 프로젝트나 채용 기회에 대해 언제든 연락 주세요. 빠른 시일 내에 답변드리겠습니다.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>example@email.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>010-1234-5678</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>서울, 대한민국</span>
+                        </div>
+                    </div>
+                    <div class="social-links-contact">
+                        <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="mailto:example@email.com"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form tilt-card">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="이름" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="이메일" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="제목" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="메시지" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">메시지 보내기</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- 푸터 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 김개발. All rights reserved.</p>
+                <p>Made with ❤️ using HTML, CSS & JavaScript</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
